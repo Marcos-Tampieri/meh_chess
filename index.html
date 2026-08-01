@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>MEH Chess</title>
-    <link rel="stylesheet" href="css/index.css"/>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meh_chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Chess</h1>
+        <div id="status">White's Turn</div>
+        <div class="board-wrapper">
+            <div id="chessboard"></div>
+            <!-- NEW: Promotion Modal -->
+            <div id="promotion-modal" class="hidden">
+                <div class="promotion-choices">
+                    <p>Promote to:</p>
+                    <div id="promo-options">
+                        <!-- Options will be populated by JS based on current player color -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <input type="button" value="Salvar Alterações" name="btSalva" onclick="Enviar(2,0)"> -->
+    <script src="script.js"></script>
+</body>
 </html>
